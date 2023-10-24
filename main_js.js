@@ -53,23 +53,43 @@ zero.addEventListener("click", () => {
   screen.value += "0";
 });
 dote.addEventListener("click", () => {
-  screen.value += ".";
+  if (screen.value.includes(".")) {
+    screen.value = screen.value;
+  } else {
+    screen.value += ".";
+  }
 });
 reset.addEventListener("click", () => {
   screen.value = "";
 });
 
 bölme.addEventListener("click", () => {
-  screen.value += "/";
+  if (screen.value.includes("/")) {
+    screen.value = screen.value;
+  } else {
+    screen.value += "/";
+  }
 });
 carpma.addEventListener("click", () => {
-  screen.value += "*";
+  if (screen.value.includes("*")) {
+    screen.value = screen.value;
+  } else {
+    screen.value += "*";
+  }
 });
 cikartma.addEventListener("click", () => {
-  screen.value += "-";
+  if (screen.value.includes("-")) {
+    screen.value = screen.value;
+  } else {
+    screen.value += "-";
+  }
 });
 toplama.addEventListener("click", () => {
-  screen.value += "+";
+  if (screen.value.includes("+")) {
+    screen.value = screen.value;
+  } else {
+    screen.value += "+";
+  }
 });
 yüzde.addEventListener("click", () => {
   screen.value = screen.value / 100;
